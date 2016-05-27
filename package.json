@@ -1,0 +1,21 @@
+{
+  "name": "snyk-remediation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Remy Sharp",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "lodash.clonedeep": "^4.3.2",
+    "semver": "^5.1.0",
+    "snyk-module": "^1.7.0"
+  },
+  "devDependencies": {
+    "clite": "^0.3.0"
+  }
+}
