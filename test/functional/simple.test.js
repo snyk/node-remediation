@@ -6,7 +6,7 @@ const MockDate = require('mockdate');
 MockDate.set('2000-09-13 04:00:00.007Z');
 
 test('simple tests', t => {
-  return Promise.all(['goof', 'jsbin'].map(name => {
+  return Promise.all(['goof', 'jsbin', 'mean'].map(name => {
     const vulns = require(`../fixtures/${name}.json`);
     const expect = require(`../fixtures/${name}-expect.json`);
 
@@ -16,4 +16,11 @@ test('simple tests', t => {
       });
     });
   }));
+});
+
+test('early exit', t => {
+  return lib().then(res => {
+    console.log(res);
+    t.deepEqual(res, { upgrade: {}, patch: {} });
+  });
 });

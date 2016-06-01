@@ -1,0 +1,117 @@
+{
+  "upgrade": {
+    "bower@1.4.1": {
+      "upgradeTo": "bower@1.7.5",
+      "upgrades": [
+        "handlebars@2.0.0",
+        "uglify-js@2.3.6",
+        "uglify-js@2.3.6",
+        "hawk@2.3.1",
+        "semver@2.3.2"
+      ],
+      "vulns": [
+        "npm:handlebars:20151207",
+        "npm:uglify-js:20151024",
+        "npm:uglify-js:20150824",
+        "npm:hawk:20160119",
+        "npm:semver:20150403"
+      ]
+    },
+    "meanio@0.8.83": {
+      "upgradeTo": "meanio@0.8.83",
+      "upgrades": [
+        "hawk@3.1.0",
+        "uglify-js@2.4.24",
+        "is-my-json-valid@2.12.1"
+      ],
+      "vulns": [
+        "npm:hawk:20160119",
+        "npm:uglify-js:20151024",
+        "npm:is-my-json-valid:20160118"
+      ]
+    },
+    "mongoose@4.3.3": {
+      "upgradeTo": "mongoose@4.3.6",
+      "upgrades": [
+        "mongoose@4.3.3"
+      ],
+      "vulns": [
+        "npm:mongoose:20160116"
+      ]
+    },
+    "npm@2.13.5": {
+      "upgradeTo": "npm@2.13.5",
+      "upgrades": [
+        "is-my-json-valid@2.12.1",
+        "hawk@3.1.0"
+      ],
+      "vulns": [
+        "npm:is-my-json-valid:20160118",
+        "npm:hawk:20160119"
+      ]
+    },
+    "phantomjs@1.9.18": {
+      "upgradeTo": "phantomjs@2.1.1",
+      "upgrades": [
+        "hawk@1.1.1"
+      ],
+      "vulns": [
+        "npm:hawk:20160119"
+      ]
+    },
+    "request@2.60.0": {
+      "upgradeTo": "request@2.60.0",
+      "upgrades": [
+        "hawk@3.1.0",
+        "is-my-json-valid@2.12.1"
+      ],
+      "vulns": [
+        "npm:hawk:20160119",
+        "npm:is-my-json-valid:20160118"
+      ]
+    }
+  },
+  "patch": {
+    "npm:hawk:20160119": {
+      "paths": [
+        {
+          "npm > request > hawk": {
+            "patched": "2000-09-13T04:00:00.007Z"
+          }
+        }
+      ]
+    },
+    "npm:ms:20151024": {
+      "paths": [
+        {
+          "meanio > morgan > debug > ms": {
+            "patched": "2000-09-13T04:00:00.007Z"
+          }
+        }
+      ]
+    },
+    "npm:tar:20151103": {
+      "paths": [
+        {
+          "npm > node-gyp > tar": {
+            "patched": "2000-09-13T04:00:00.007Z"
+          }
+        }
+      ]
+    },
+    "npm:uglify-js:20151024": {
+      "paths": [
+        {
+          "swig > uglify-js": {
+            "patched": "2000-09-13T04:00:00.007Z"
+          }
+        },
+        {
+          "meanio > swig > uglify-js": {
+            "patched": "2000-09-13T04:00:00.007Z"
+          }
+        }
+      ]
+    }
+  }
+}
