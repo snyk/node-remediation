@@ -1,0 +1,65 @@
+{
+  "upgrade": {
+    "humanize-ms@1.0.1": {
+      "upgradeTo": "humanize-ms@1.0.2",
+      "upgrades": [
+        "ms@0.6.2"
+      ],
+      "vulns": [
+        "npm:ms:20151024"
+      ]
+    },
+    "mongoose@4.2.4": {
+      "upgradeTo": "mongoose@4.3.6",
+      "upgrades": [
+        "mongoose@4.2.4"
+      ],
+      "vulns": [
+        "npm:mongoose:20160116"
+      ]
+    },
+    "npmconf@0.0.24": {
+      "upgradeTo": "npmconf@2.0.9",
+      "upgrades": [
+        "semver@1.1.4"
+      ],
+      "vulns": [
+        "npm:semver:20150403"
+      ]
+    },
+    "st@0.2.4": {
+      "upgradeTo": "st@0.2.5",
+      "upgrades": [
+        "st@0.2.4"
+      ],
+      "vulns": [
+        "npm:st:20140206"
+      ]
+    }
+  },
+  "patch": {
+    "npm:marked:20150520": {
+      "paths": [
+        {
+          "marked": {
+            "patched": "2000-09-13T04:00:00.007Z"
+          }
+        }
+      ]
+    },
+    "npm:request:20160119": {
+      "paths": [
+        {
+          "tap > codecov.io > request": {
+            "patched": "2000-09-13T04:00:00.007Z"
+          }
+        },
+        {
+          "tap > coveralls > request": {
+            "patched": "2000-09-13T04:00:00.007Z"
+          }
+        }
+      ]
+    }
+  }
+}

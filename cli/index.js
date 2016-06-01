@@ -1,2 +1,6 @@
 const clite = require('clite');
-clite(require('./config'));
+clite({
+  commands: {
+    _: 'cli/test',
+  },
+});

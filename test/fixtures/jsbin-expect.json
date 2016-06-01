@@ -1,0 +1,16 @@
+{
+  "upgrade": {
+    "sqlite3@2.2.7": {
+      "upgradeTo": "sqlite3@3.0.4",
+      "upgrades": [
+        "tar@0.1.20",
+        "semver@3.0.1"
+      ],
+      "vulns": [
+        "npm:tar:20151103",
+        "npm:semver:20150403"
+      ]
+    }
+  },
+  "patch": {}
+}
