@@ -20,7 +20,6 @@ test('simple tests', t => {
 
 test('early exit', t => {
   return lib().then(res => {
-    console.log(res);
     t.deepEqual(res, { upgrade: {}, patch: {} });
   });
 });
