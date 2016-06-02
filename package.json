@@ -6,7 +6,7 @@
     "snyk-remediation": "cli/index.js"
   },
   "scripts": {
-    "es5ify": "babel {lib,lib/**,cli,test/**}/*.js -d .",
+    "es5ify": "babel --ignore=node_modules . -d .",
     "cover": "tap --cov --coverage-report=lcov test/**/*.test.js",
     "test": "tap test/**/*.test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
