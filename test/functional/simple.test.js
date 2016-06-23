@@ -10,9 +10,19 @@ test('simple tests', t => {
     const vulns = require(`../fixtures/${name}.json`);
     const expect = require(`../fixtures/${name}-expect.json`);
 
+    const unresolved = {
+      jsbin: 12,
+      mean: 0,
+      goof: 1,
+    };
+
     t.test(name, t => {
       return lib(vulns.vulnerabilities).then(res => {
-        t.deepEqual(res, expect);
+        t.deepEqual({ upgrade: res.upgrade, patch: res.patch }, expect);
+
+        if (unresolved[name] !== null) {
+          t.equal(res.unresolved.length, unresolved[name]);
+        }
       });
     });
   }));
@@ -20,6 +30,6 @@ test('simple tests', t => {
 
 test('early exit', t => {
   return lib().then(res => {
-    t.deepEqual(res, { upgrade: {}, patch: {} });
+    t.deepEqual(res, { unresolved: [], upgrade: {}, patch: {} });
   });
 });
