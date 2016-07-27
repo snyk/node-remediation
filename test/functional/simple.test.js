@@ -19,13 +19,35 @@ test('simple tests', t => {
     t.test(name, t => {
       return lib(vulns.vulnerabilities).then(res => {
         t.deepEqual({ upgrade: res.upgrade, patch: res.patch }, expect);
-
         if (unresolved[name] !== null) {
           t.equal(res.unresolved.length, unresolved[name]);
         }
       });
     });
   }));
+});
+
+test('do not patch', t => {
+  const name = 'goof';
+  const vulns = require(`../fixtures/${name}.json`);
+  const expect = require(`../fixtures/${name}-expect.json`);
+
+  const unresolved = {
+    goof: 3,
+  };
+
+  return t.test(name, t => {
+    return lib(vulns.vulnerabilities, { patch: false }).then(res => {
+      t.deepEqual({ upgrade: res.upgrade, patch: res.patch }, {
+        upgrade: expect.upgrade,
+        patch: {}
+      });
+
+      if (unresolved[name] !== null) {
+        t.equal(res.unresolved.length, unresolved[name]);
+      }
+    });
+  });
 });
 
 test('early exit', t => {
