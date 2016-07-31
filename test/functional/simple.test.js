@@ -22,7 +22,7 @@ test('simple tests', t => {
         ignore: {
           'npm:gmail-js:20160721': {
             paths: [
-              ['gmail-js'],
+              ['fiction@0.2.0', 'gmail-js@0.5.0'],
             ],
             meta: {
               reason: 'no fix',

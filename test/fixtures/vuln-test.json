@@ -24,6 +24,7 @@
       "id": "npm:gmail-js:20160721",
       "from": [
         "vuln-test@1.0.0",
+        "fiction@0.2.0",
         "gmail-js@0.5.0"
       ],
       "upgradePath": [],
