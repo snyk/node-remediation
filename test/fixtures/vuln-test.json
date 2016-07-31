@@ -1,0 +1,37 @@
+{
+  "vulnerabilities": [
+    {
+      "title": "DOM-based XSS",
+      "creationTime": "2016-07-21T16:00:02.338Z",
+      "modificationTime": "2016-07-21T16:00:02.338Z",
+      "publicationTime": "2016-07-21T14:59:33.000Z",
+      "disclosureTime": "2016-07-21T14:59:33.000Z",
+      "semver": {
+        "vulnerable": "*",
+        "unaffected": "<0.0.0"
+      },
+      "CVSSv3": "",
+      "severity": "high",
+      "identifiers": {
+        "CWE": [
+          "CWE-79"
+        ],
+        "CVE": [],
+        "NSP": 125
+      },
+      "patches": [],
+      "moduleName": "gmail-js",
+      "id": "npm:gmail-js:20160721",
+      "from": [
+        "vuln-test@1.0.0",
+        "gmail-js@0.5.0"
+      ],
+      "upgradePath": [],
+      "version": "0.5.0",
+      "name": "gmail-js",
+      "isUpgradable": false,
+      "isPatchable": false,
+      "parentDepType": "prod"
+    }
+  ]
+}
