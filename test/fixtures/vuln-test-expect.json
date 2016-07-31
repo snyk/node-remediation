@@ -1,0 +1,16 @@
+{
+  "ignore": {
+    "npm:gmail-js:20160721": {
+      "paths": [
+        {
+          "fiction > gmail-js": {
+            "expires": "2000-10-13T04:00:00.007Z",
+            "reason": "no fix"
+          }
+        }
+      ]
+    }
+  },
+  "upgrade": {},
+  "patch": {}
+}

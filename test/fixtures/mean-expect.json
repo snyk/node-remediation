@@ -1,4 +1,5 @@
 {
+  "ignore": {},
   "upgrade": {
     "bower@1.4.1": {
       "upgradeTo": "bower@1.7.5",
