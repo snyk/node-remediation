@@ -1,4 +1,4 @@
-const test = require('tap-only');
+const test = require('tap').test;
 const lib = require('../../');
 const MockDate = require('mockdate');
 

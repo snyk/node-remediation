@@ -5,6 +5,10 @@
   "bin": {
     "snyk-remediation": "cli/index.js"
   },
+  "files": [
+    "cli",
+    "lib"
+  ],
   "scripts": {
     "es5ify": "babel --ignore=node_modules . -d .",
     "cover": "tap --cov --coverage-report=lcov test/**/*.test.js",
@@ -18,7 +22,7 @@
   "license": "Apache 2.0",
   "dependencies": {
     "babel-runtime": "^6.9.2",
-    "debug": "^2.2.0",
+    "debug": "^3.0.0",
     "es6-promise": "^3.2.1",
     "lodash.clonedeep": "^4.3.2",
     "lodash.get": "^4.4.2",
@@ -38,11 +42,10 @@
     "proxyquire": "^1.7.9",
     "semantic-release": "^4.3.5",
     "sinon": "^1.17.4",
-    "tap": "^5.7.2",
-    "tap-only": "0.0.5"
+    "tap": "^10.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Snyk/node-remediation.git"
+    "url": "https://github.com/snyk/node-remediation.git"
   }
 }

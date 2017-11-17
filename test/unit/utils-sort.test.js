@@ -1,4 +1,4 @@
-const test = require('tap-only');
+const test = require('tap').test;
 const sort = require('../../lib/utils/sort');
 
 test('utils.sort (asc)', t => {
