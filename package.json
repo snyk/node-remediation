@@ -13,7 +13,9 @@
     "es5ify": "babel --ignore=node_modules . -d .",
     "cover": "tap --cov --coverage-report=lcov test/**/*.test.js",
     "test": "tap test/**/*.test.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "snyk"
@@ -27,7 +29,8 @@
     "lodash.clonedeep": "^4.3.2",
     "lodash.get": "^4.4.2",
     "semver": "^5.1.0",
-    "snyk-module": "^1.7.0"
+    "snyk-module": "^1.7.0",
+    "snyk": "^1.59.0"
   },
   "peerDependencies": {
     "clite": "^0.3.0"
@@ -47,5 +50,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/snyk/node-remediation.git"
-  }
+  },
+  "snyk": true
 }
